@@ -8,15 +8,15 @@ function randomize() {
   console.log(divs.length, "randomize!");
 
   divs.forEach(function(div) {
-    let scale = randomNumber(0.5, 1.2);
-    let translateX = randomNumber(0, 50);
-    let translateY = randomNumber(0, 20);
-    let rotate = randomNumber(0, 360);
+    let scale = randomNumber(0.9, 1.1);
+    let translateX = randomNumber(-8, 8);
+    let translateY = randomNumber(-5, 5);
+    let rotate = randomNumber(-8, -8);
 
     if (Math.random() > 0.5) {
       scale = 1;
-      translateX = randomNumber(0, 80);
-      translateY = randomNumber(0, 80);
+      translateX = randomNumber(-12, 12);
+      translateY = randomNumber(-8, 8);
     }
 
     div.style.transform = `scale(${scale}) translate(${translateX}%, ${translateY}%) rotate(${rotate}deg)`;
